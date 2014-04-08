@@ -9,5 +9,5 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-VPS=54.72.102.171
+VPS=vps.2048wc.com
 export VPS
