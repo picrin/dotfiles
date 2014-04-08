@@ -1,3 +1,4 @@
 dotfiles
 ========
-otfiles for fedora-laptop, VPS, etc.
+dotfiles for fedora-laptop, VPS, etc.
+
