@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 xrandr --output LVDS1 --off
 xmodmap -e "clear mod1"
 xmodmap -e "clear mod4"
