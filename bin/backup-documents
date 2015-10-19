@@ -1,1 +1,0 @@
-rsync -avzr -e '/bin/ssh -l picrin' --delete /home/picrin/documents vps.2048wc.com:/home/picrin/backup
