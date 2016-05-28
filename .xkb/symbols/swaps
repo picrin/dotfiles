@@ -6,6 +6,7 @@ xkb_symbols "swap_super_alt" {
 	replace key <AE04> { [4, dollar, U2200, 4] };
 	replace key <AE07> { [7, ampersand, U03BB, U039B]};
         replace key <AE12> { [equal, plus, U00D7, equal ]};
+        replace key <AD10> { [p, P, U03C0, U03A0]};
 };
 
 # in order to install this layout run:
