@@ -1,0 +1,6 @@
+partial modifier_keys
+xkb_symbols "swap_super_alt" {
+        replace key <RALT> { [Super_L] };
+        replace key <LWIN> { [ISO_Level3_Shift] };
+};
+
