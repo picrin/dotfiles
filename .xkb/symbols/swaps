@@ -2,5 +2,14 @@ partial modifier_keys
 xkb_symbols "swap_super_alt" {
         replace key <RALT> { [Super_L] };
         replace key <LWIN> { [ISO_Level3_Shift] };
+	replace key <AE03> { [3, numbersign, U2203, 3] };
+	replace key <AE04> { [4, dollar, U2200, 4] };
+	replace key <AE07> { [7, ampersand, U03BB, U039B]};
+        replace key <AE12> { [equal, plus, U00D7, equal ]};
 };
 
+# in order to install this layout run:
+# xkbcomp -I$HOME/.xkb ~/.xkb/keymap/adam $DISPLAY
+
+# layout we're based on is:
+# /usr/share/X11/xkb/symbols/pl 
