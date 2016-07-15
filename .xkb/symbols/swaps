@@ -7,6 +7,13 @@ xkb_symbols "swap_super_alt" {
 	replace key <AE07> { [7, ampersand, U03BB, U039B]};
         replace key <AE12> { [equal, plus, U00D7, equal ]};
         replace key <AD10> { [p, P, U03C0, U03A0]};
+	replace key <AB04> { [v, V, U2228, U2227]};
+        replace key <AE10> { [0, parenright, U2218, 0]};
+        replace key <AB08> { [comma, less, U27E8, comma]};
+        replace key <AB09> { [period, greater, U27E9, period ]};
+        replace key <AE05> { [5, percent, U03C3, U03A3]};
+
+
 };
 
 # in order to install this layout run:
