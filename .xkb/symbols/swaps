@@ -1,5 +1,5 @@
 partial modifier_keys
-xkb_symbols "swap_super_alt" {
+xkb_symbols "adam_changes" {
         replace key <RALT> { [Super_L] };
         replace key <LWIN> { [ISO_Level3_Shift] };
 	replace key <AE03> { [3, numbersign, U2203, 3] };
@@ -12,8 +12,9 @@ xkb_symbols "swap_super_alt" {
         replace key <AB08> { [comma, less, U27E8, comma]};
         replace key <AB09> { [period, greater, U27E9, period ]};
         replace key <AE05> { [5, percent, U03C3, U03A3]};
-
-
+        replace key <CAPS>  { [VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol] };
+        replace key <LCTL>  { [VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol] };
+	modifier_map Control { <CAPS> };
 };
 
 # in order to install this layout run:

@@ -1,3 +1,3 @@
 #!/bin/bash
-xkbcomp -I$HOME/.xkb ~/.xkb/keymap/adam $DISPLAY
+setxkbmapadam
 exec awesome
