@@ -1,0 +1,3 @@
+set -e
+pep8 $1
+env python3 $1
