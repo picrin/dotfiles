@@ -7,7 +7,7 @@ fi
 
 PATH=$HOME/bin:$PATH:/home/picrin/bin/anaconda3/bin
 
-export PYTHONPATH=$HOME/programming/biopython
+export PYTHONPATH=$HOME/programming/biopython:/apps/transvis
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
