@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.olean": true
+    },
+    "window.zoomLevel": 2,
+    "editor.wordWrap": "off",
+    "lean.executablePath": "/home/picrin/programming/lean/bin/lean",
+    "spellchecker.language": "en_GB-ise",
+    "python.linting.enabled": false,
+    "python.pythonPath": "python",
+    "workbench.startupEditor": "welcomePage",
+    "editor.autoClosingBrackets": false
+}
