@@ -13,6 +13,9 @@
     "spellchecker.language": "en_GB-ise",
     "python.linting.enabled": false,
     "python.pythonPath": "python",
-    "workbench.startupEditor": "welcomePage",
-    "editor.autoClosingBrackets": false
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.autoClosingBrackets": false,
+    "editor.insertSpaces": true,
+    "keyboard.dispatch": "keyCode",
+    "explorer.confirmDragAndDrop": false
 }

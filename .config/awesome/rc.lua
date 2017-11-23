@@ -451,5 +451,5 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 os.execute("setxkbmapadam")
-os.execute("compton --backend glx --paint-on-overlay --vsync opengl-swc &")
-os.execute("synclient MaxTapTime=0")
+-- os.execute("compton --backend glx --paint-on-overlay --vsync opengl-swc &")
+-- os.execute("synclient MaxTapTime=0")
