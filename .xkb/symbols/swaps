@@ -12,8 +12,10 @@ xkb_symbols "adam_changes" {
         replace key <AB08> { [comma, less, U27E8, comma]};
         replace key <AB09> { [period, greater, U27E9, period ]};
         replace key <AE05> { [5, percent, U03C3, U03A3]};
-        replace key <CAPS>  { [VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol] };
-        replace key <LCTL>  { [VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol] };
+        replace key <CAPS> { [VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol] };
+        replace key <LCTL> { [VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol] };
+        replace key <AD11> { [bracketleft,  braceleft,  U27E8, leftdoublequotemark]};
+        replace key <AD12> { [bracketright,  braceright,  U27E9, rightdoublequotemark]};
 	modifier_map Control { <CAPS> };
 };
 

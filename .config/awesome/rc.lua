@@ -10,6 +10,8 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
+local battery_widget = require("battery-widget")
+
 
 -- Load Debian menu entries
 require("debian.menu")
@@ -58,18 +60,8 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
 {
-    awful.layout.suit.floating,
-    awful.layout.suit.tile,
     awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier
+    awful.layout.suit.floating,
 }
 -- }}}
 
@@ -166,6 +158,12 @@ mytasklist.buttons = awful.util.table.join(
                                               if client.focus then client.focus:raise() end
                                           end))
 
+
+
+-- define your battery widget (you may need to use another adapter name as in
+-- your /sys/class/power_supply)
+local battery = battery_widget({adapter = "BAT0"})
+
 for s = 1, screen.count() do
     -- Create a promptbox for each screen
     mypromptbox[s] = awful.widget.prompt()
@@ -195,6 +193,7 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(battery.widget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
@@ -451,5 +450,5 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 os.execute("setxkbmapadam")
--- os.execute("compton --backend glx --paint-on-overlay --vsync opengl-swc &")
--- os.execute("synclient MaxTapTime=0")
+os.execute("compton --backend glx --paint-on-overlay --vsync opengl-swc &")
+os.execute("synclient MaxTapTime=0")
